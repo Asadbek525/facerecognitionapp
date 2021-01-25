@@ -1,9 +1,0 @@
-.form {
-  width: 700px;
-  background: rgba(0, 0, 0, 0.479);
-}
-.center {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap-reverse;
-}

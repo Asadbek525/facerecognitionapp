@@ -2,7 +2,7 @@ import React from 'react';
 
 const Signin = ({ signInClick }) => {
   return (
-    <div className='shadow-5 ba b--black-10 pa4 dib'>
+    <div className='shadow-5 narrow ba b--black-10 pa4 dib'>
       <form className='db center ph4'>
         <legend className='f1 center fw6 ph0 mh0'>Sign In</legend>
         <div className='mv3'>

@@ -1,25 +1,27 @@
 import React from 'react';
-import './ImageLinkForm.css';
 
 const ImageLinkForm = ({ OnInputChange, OnClick }) => {
   return (
-    <div>
-      <p className='f3'>
-        {'This Magic Brain will detect faces in your pictures. Git it a try.'}
-      </p>
-      <div className='center'>
-        <div className='form center pa3 br3  shadow-5'>
-          <input
-            className='f4 pa2 w-70 bw0 outline-0 center'
-            type='text'
-            onChange={OnInputChange}
-          />
-          <button
-            className='w-30 grow f4 outline-0 bw0 white bg-light-purple'
-            onClick={OnClick}
-          >
-            Detect
-          </button>
+    <div className='pa4-l'>
+      <div className='mw7 bg-black-50 center pa4 br2-ns ba b--black-10'>
+        <div className='cf bn ma0 pa0'>
+          <div className='cf'>
+            <label className='clip' htmlFor='email-address'>
+              Email Address
+            </label>
+            <input
+              onChange={OnInputChange}
+              className='f6 f5-l outline-0 input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns'
+              placeholder='Enter your image url'
+              type='text'
+              id='url'
+            />
+            <button
+              onClick={OnClick}
+              className='f6 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns'>
+              Detect
+            </button>
+          </div>
         </div>
       </div>
     </div>
